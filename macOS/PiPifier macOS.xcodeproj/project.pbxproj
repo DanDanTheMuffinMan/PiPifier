@@ -28,6 +28,7 @@
 		11F1B51C1D4EC1010041579B /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F1B51B1D4EC1010041579B /* SafariExtensionHandler.swift */; };
 		11F1B5241D4EC1010041579B /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 11F1B5231D4EC1010041579B /* script.js */; };
 		11F1B5291D4EC1010041579B /* PiPifier Button.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11F1B5141D4EC1010041579B /* PiPifier Button.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90544224B4BC7BF58D04AC55 /* PiPifier-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA248B7BCFE322D4D097648 /* PiPifier-Prefix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,9 @@
 		11F1B51B1D4EC1010041579B /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		11F1B5221D4EC1010041579B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F1B5231D4EC1010041579B /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		6EA248B7BCFE322D4D097648 /* PiPifier-Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiPifier-Prefix.swift"; sourceTree = "<group>"; };
+		978C44AD9D70E86A63765ACB /* PiPifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiPifier-Prefix.pch"; sourceTree = "<group>"; };
+		CE6B4FE98EB251ACCF0540C6 /* PiPifier-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiPifier-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,9 @@
 				11F1B5181D4EC1010041579B /* PiPifier-Safari-Extension */,
 				11F1B5151D4EC1010041579B /* Frameworks */,
 				11F1B4FF1D4EC0CD0041579B /* Products */,
+				978C44AD9D70E86A63765ACB /* PiPifier-Prefix.pch */,
+				6EA248B7BCFE322D4D097648 /* PiPifier-Prefix.swift */,
+				CE6B4FE98EB251ACCF0540C6 /* PiPifier-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,7 +270,6 @@
 				1112598826BBD12C00A441C1 /* PiP_Toolbar_Icon_white.svg in Resources */,
 				11DDACE526BB563B008E0B3D /* PiP_Toolbar_Icon_new_big_sur.pdf in Resources */,
 				11F1B5061D4EC0CD0041579B /* Assets.xcassets in Resources */,
-				119E42D524F52FF300F3226F /* PiP_Toolbar_Icon_new.pdf in Resources */,
 				11F1B5091D4EC0CD0041579B /* Main.storyboard in Resources */,
 				11DDACE226BB5526008E0B3D /* PiP_Toolbar_Icon.pdf in Resources */,
 				1112599026BBD2B500A441C1 /* PiP_Toolbar_Icon_white_new.svg in Resources */,
@@ -293,6 +299,7 @@
 				11F1B5041D4EC0CD0041579B /* ViewController.swift in Sources */,
 				11F1B5021D4EC0CD0041579B /* AppDelegate.swift in Sources */,
 				115B6C241DB38BD100AE9B6F /* SettingsManager.swift in Sources */,
+				90544224B4BC7BF58D04AC55 /* PiPifier-Prefix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +456,8 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = AW9CBV6SY7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiPifier-Prefix.pch";
 				INFOPLIST_FILE = PiPifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.3.1;
@@ -456,6 +465,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PiPifier-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -471,6 +481,8 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = AW9CBV6SY7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiPifier-Prefix.pch";
 				INFOPLIST_FILE = PiPifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.3.1;
@@ -478,6 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PiPifier-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

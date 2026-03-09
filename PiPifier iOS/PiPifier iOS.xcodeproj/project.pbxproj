@@ -29,6 +29,7 @@
 		11FA077926C72A25006235D4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 11FA077826C72A25006235D4 /* popup.css */; };
 		11FA077B26C72A25006235D4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 11FA077A26C72A25006235D4 /* popup.js */; };
 		11FA077F26C72A25006235D4 /* PiPifier-WebExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11FA076726C72A25006235D4 /* PiPifier-WebExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DED4457990D48A383706E9AE /* PiPifier iOS-Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1640A29576C2D216431E4D /* PiPifier iOS-Prefix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,9 @@
 		11FA077826C72A25006235D4 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		11FA077A26C72A25006235D4 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		11FA077C26C72A25006235D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30714AD5AFE0AB30FCDD5D5F /* PiPifier iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiPifier iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8284B0E8003A7E61A358F0F /* PiPifier iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiPifier iOS-Prefix.pch"; sourceTree = "<group>"; };
+		DC1640A29576C2D216431E4D /* PiPifier iOS-Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PiPifier iOS-Prefix.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,9 @@
 				11FA076826C72A25006235D4 /* PiPifier-WebExtension */,
 				1177FEF11EC254370061D175 /* Products */,
 				11B525F21ECF2C1B0064BA96 /* Frameworks */,
+				B8284B0E8003A7E61A358F0F /* PiPifier iOS-Prefix.pch */,
+				DC1640A29576C2D216431E4D /* PiPifier iOS-Prefix.swift */,
+				30714AD5AFE0AB30FCDD5D5F /* PiPifier iOS-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -398,6 +405,7 @@
 				11C9CB8624A4E57000ECA5CD /* MainViewSwiftUI.swift in Sources */,
 				11F4652924A6B510001CBE4F /* MailView.swift in Sources */,
 				11C9CB8A24A565DC00ECA5CD /* MainUICoordinator.swift in Sources */,
+				DED4457990D48A383706E9AE /* PiPifier iOS-Prefix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +571,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = AW9CBV6SY7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiPifier iOS-Prefix.pch";
 				INFOPLIST_FILE = "PiPifier iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -570,6 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.APPenzeller.PiPifier-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PiPifier iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,6 +595,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = AW9CBV6SY7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiPifier iOS-Prefix.pch";
 				INFOPLIST_FILE = "PiPifier iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -591,6 +604,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.APPenzeller.PiPifier-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PiPifier iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
